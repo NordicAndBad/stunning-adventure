@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CS2 — Fan Site</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-wrap">
+        <h1 class="logo">CS2 Fan Hub</h1>
+
+        <!-- чекбокс и label обязательно перед nav -->
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+        <nav class="main-nav" aria-label="Основная навигация">
+          <ul>
+            <li><a href="#about">О CS2</a></li>
+            <li><a href="#weapons">Оружие</a></li>
+            <li><a href="#stats">Статистика</a></li>
+            <li><a href="#subscribe">Подписка</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h2>Counter-Strike 2 — быстро, метко, командно</h2>
+          <p>Карта, команда и твой выстрел — всё решают секунды.</p>
+        </div>
+      </section>
+
+      <article id="about" class="container about">
+        <h3>Что такое CS2</h3>
+        <p>
+          CS2 — продолжение легендарной соревновательной серии шутеров. Здесь
+          важны механика стрельбы, позиции и командная игра.
+        </p>
+      </article>
+
+      <section id="weapons" class="container cards">
+        <h3>Популярные типы оружия</h3>
+        <div class="grid">
+          <figure class="card">
+            <img
+              src="img\0d808029-4357-485f-b0fb-5a19612502e5.png"
+              alt="AK-47"
+            />
+            <figcaption>AK-47 — сильный урон и отдача.</figcaption>
+          </figure>
+          <figure class="card">
+            <img
+              src="img\5bf66639-8e01-4914-9e79-b07be2b2a79e.png"
+              alt="M4A1"
+            />
+            <figcaption>M4A1 — стабильная автоматическая винтовка.</figcaption>
+          </figure>
+          <figure class="card">
+            <img src="img\186b1414-3fc1-42bd-93ae-04408b5ead89.png" alt="AWP" />
+            <figcaption>AWP — снайперская мощь одним выстрелом.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="stats" class="container stats">
+        <h3>Простая серверная статистика</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Игрок</th>
+              <th>Убийства</th>
+              <th>Смерти</th>
+              <th>K/D</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Player1</td>
+              <td>22</td>
+              <td>8</td>
+              <td>2.75</td>
+            </tr>
+            <tr>
+              <td>Player2</td>
+              <td>16</td>
+              <td>12</td>
+              <td>1.33</td>
+            </tr>
+            <tr>
+              <td>Player3</td>
+              <td>8</td>
+              <td>10</td>
+              <td>0.80</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="subscribe" class="container subscribe">
+        <h3>Подписаться на новости и патчи</h3>
+        <form method="post" action="#">
+          <label for="name">Имя</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Игровой ник"
+            required
+          />
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="you@example.com"
+            required
+          />
+          <fieldset>
+            <legend>Интересует</legend>
+            <label
+              ><input type="checkbox" name="topics" value="patches" checked />
+              Патчи</label
+            >
+            <label
+              ><input type="checkbox" name="topics" value="esports" />
+              Киберспорт</label
+            >
+            <label
+              ><input type="checkbox" name="topics" value="guides" />
+              Гайды</label
+            >
+          </fieldset>
+          <button type="submit">Подписаться</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© CS2 Fan Hub — демо-сайт. Сделано на HTML5 + CSS (адаптив).</p>
+      </div>
+    </footer>
+  </body>
+</html>
